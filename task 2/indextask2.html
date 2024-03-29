@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styletask2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <title>TIMER</title>
+</head>
+<body>
+<!-------OUTER PART------------>
+    <div class="outer">
+<!------TIMERS OUTER----------->
+     <div class="timers_outer">
+<!------TIMERS,COUNTDOWNS------>
+        <div class="timers">
+<!-------TIMER OPTIONS--------->
+        <div class="timers_Navbar">
+            <span class="mdi mdi-timer toggle-button" id="button1"></span> 
+            <span class="mdi mdi-timer-sand-full toggle-button" id="button2"></span>
+            <span class="mdi mdi-clock-time-five toggle-button" id="button3"></span> 
+        </div>
+<!-----CONTENT1----->
+        <div id="content1" class="content">
+            <div class="timers_stopwatch">  
+                  <h1>STOP WATCH</h1>
+            </div>
+          <div class="timers_count">
+            <h2 id="time"> 00:00:00 </h2>
+          </div>
+
+          <div class="play_pause">
+            <span class="mdi mdi-pause" onclick="watchstop()" ></span>
+            <!--<span class="mdi mdi-play-circle"></span>-->
+            <span class="mdi mdi-play" onclick="watchstart()"></span>
+            <!--<span class="mdi mdi-pause-circle"  onclick="watchstop()"></span>-->
+            <span class="mdi mdi-reload" onclick="watchreset()"></span>
+
+          </div>
+        </div>
+<!-----CONTENT2------>
+        <div id="content2" class="content">
+            <div class="timers_settimer">
+                <h1>SET TIMER</h1>
+            </div>
+          <div class="inputnumber"> <input type="number" id="timerInput" placeholder="Enter time in minutes"> </div>
+          <div class="settimer_play">
+            <span class="mdi mdi-pause" onclick="stopCountdown()" ></span>
+            <span class="mdi mdi-play" onclick="startCountdown()"></span>
+            <span class="mdi mdi-reload" onclick="resetCountdown()"></span>
+          </div>
+            <div class="set_timer" id="countdown">00:00</div>
+        </div>
+<!------CONTENT3------>
+        <div class="content" id="content3">
+            <div class="standard_time">
+                <h1> TIME </h1>
+            </div>
+            <div class="standard_timedisplay" id="ist">
+                <h2>00:00:00</h2>
+            </div>
+        </div>
+        </div>
+     </div>
+
+    </div>
+ <!--script-->   
+    <script src="scripttask2.js"></script>
+</body>
+</html>

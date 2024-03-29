@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap')
+
+/*---------UNI SELECTOR-------*/ 
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing:border-box;
+}
+
+/*----DISPLAY & HIDE CONTENT----*/
+.content{
+        display:none;
+}
+#content1{
+        display: block;
+}
+
+
+/*---------- BODY ------------*/
+body{
+         background-color: rgb(228, 226, 226);
+}
+
+/*------------------------------TIMERS OUTER------------------------------*/
+.timers_outer{
+        margin-top: auto;
+}
+
+/*------------------------------TIMERS- OUTERS---------------------------*/
+.timers{
+         display: grid;
+         justify-content: center;
+         align-items: center;
+         background-color: white;
+         padding-bottom: 18vh;
+         margin: 90px 250px 0px 250px;
+         border: 0px solid white;
+         border-radius: 20px;
+                
+}
+@media only screen and (max-width:1025px) {
+.timers{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-bottom: 250px;
+        margin: 90px 30px 0px 30px;
+        border: 0px solid white;
+        border-radius: 20px;
+                       
+       }
+        
+}
+@media only screen and (max-width:767px) {
+        .timers{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                padding-bottom: 160px;
+                margin: 80px 40px 0px 40px;
+                border: 0px solid white;
+                border-radius: 20px;
+                               
+               }
+                
+}
+@media only screen and (max-width:430px) {
+        .timers{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                padding-bottom: 100px;
+                margin: 65px 20px 0px 20px;
+                border: 0px solid white;
+                border-radius: 20px;
+                               
+               }
+                
+        }
+
+/*----------------------------TIMERS-NAV BAR---------------------------*/
+
+.timers_Navbar{
+        margin-top: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.timers_Navbar span{
+         font-size: 32px;
+         padding: 40px;
+         color: rgb(25, 19, 118);
+}
+
+.timers_Navbar span:hover{
+        color:  rgb(0, 0, 0);
+       
+}
+@media only screen and (max-width:455px){
+.timers_Navbar{
+        margin-top: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+.timers_Navbar span{
+        font-size: 30px;
+        padding: 7vw;
+        color: rgb(25, 19, 118);
+       }       
+
+.timers_Navbar span:hover{
+        color:  rgb(0, 0, 0);
+       
+}}
+
+/*----------------------------------CONTENTS1------------------------*/
+
+
+/*--------------timer-stopwatch----------*/
+ .timers_stopwatch {
+        font-size: 2.3vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        margin-top: 1vh;
+        color: rgb(18, 12, 100);
+        font-family: "Denk One", sans-serif;
+        font-style: bold;
+        
+}
+@media only screen and (max-width:429px){
+.timers_stopwatch {
+        font-size: 4vw;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        color:  rgb(22, 22, 36);
+        margin-top: 1vh;
+        color: rgb(18, 12, 100);
+        font-family: "Denk One", sans-serif;
+        font-style: bold;
+               
+       }       
+}
+
+/*--------------timers count-------------*/
+.timers_count{
+        margin-top: 0px;
+}
+.timers .timers_count h2 {
+        margin: 1vh;
+        font-size: 250%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color:  rgb(0, 0, 0);
+        font-weight: 500;
+        font-family: "Fjalla One", sans-serif;
+        font-style: normal;
+}
+
+
+/*------------play and pause-------------*/
+.play_pause{
+         display: flex;
+         justify-content:center;
+         align-items: center;
+         margin-top: 5vh;
+    
+}
+.play_pause span{
+          padding: 5px;
+          font-size: 35px;
+          color:  rgb(22, 17, 88);
+          padding-bottom: 13px;
+          
+}
+.play_pause > :nth-child(2){
+        font-size: 55px;
+}
+.play_pause  span:hover{
+        color:  rgb(22, 22, 36);
+        
+        
+}
+
+/*-----------------------------------CONTENTS 2-----------------------*/
+
+/*------------set timer header--------*/
+.timers_settimer {
+        margin-top: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.4vh;
+        color: rgb(18, 12, 100);
+        font-family: "Denk One", sans-serif;
+        
+}
+@media only screen and (max-width:429px){
+        .timers_settimer {
+                margin-top: 1vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 4vw;
+                color: rgb(18, 12, 100);
+                font-family: "Denk One", sans-serif;
+                
+        } }
+        
+/*------------input box-model-----------*/
+.inputnumber{
+         margin-top: 0vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.inputnumber input{
+        color:  rgb(22, 17, 88);
+}
+
+/*--------------input tag-------------*/
+input[type=number]{
+        font-size: 2vh;
+        border-radius: 6px;
+        text-align: center;
+        color:  rgb(22, 17, 88);
+        padding: 3px;
+        border: 2.5px solid  rgb(22, 17, 88);
+        border-color: rgb(22, 17, 88);
+        background-color:  rgb(255, 255, 255);;
+}
+@media only screen and (max-width:429px) {
+
+input[type=number]{
+         font-size: 4vw;
+         border-radius: 6px;
+         text-align: center;
+         color:  rgb(22, 17, 88);
+         padding: 3px;
+         border: 2.5px solid  rgb(22, 17, 88);
+         border-color: rgb(22, 17, 88);
+         background-color:  rgb(255, 255, 255);;
+} }
+
+input::placeholder{
+        color:  rgb(22, 17, 88);
+        opacity: 0.9;
+        
+}
+
+/*--------------play button------------*/
+.settimer_play{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.settimer_play span{
+        display: flex;
+        margin-top: 2vh;
+        font-size: 35px;
+         justify-content: center;
+         align-items: center;
+         color:  rgb(22, 17, 88);
+         
+}
+
+.settimer_play > :nth-child(2){
+        font-size: 55px;
+}
+.settimer_play  span:hover{
+        color:  rgb(22, 22, 36);
+        
+        
+}
+
+/*--------display countdown------*/
+#countdown{
+        margin-top: 3vh;
+        font-size: 250%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-family: "Fjalla One", sans-serif;
+        font-style: normal;
+        color: black;
+}
+
+
+
+/*-----------------------------------CONTENTS 3-----------------------*/
+/*--------standard tims header----*/
+.standard_time{
+        margin-top: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.3vh;
+        color: rgb(18, 12, 100);
+        font-family: "Denk One", sans-serif;
+        font-style: bold;
+}
+
+/*--------standard tims display----*/
+.standard_timedisplay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 250%;
+        color: black;
+        font-weight: 500;
+         font-family: "Fjalla One", sans-serif;
+         font-style: normal;
+         padding-bottom: 132px;
+}
